@@ -27,12 +27,12 @@ export default function Home() {
     }
   }
   return (
-    <div className='pt-20'>
+    <div className='pt-20 bg-[#1da1f2]'>
       <div className='flex flex-col justify-center items-center'>
         <h1 className='text-5xl mb-6 font-bold'>Alpacpac</h1>
         {
           profiles.map(profile => (
-            <div key={profile.id} className='w-2/3 shadow-md p-6 rounded-lg mb-8 flex flex-col items-center'>
+            <div key={profile.id} className='bg-[#FFFFFF] w-2/3 shadow-md p-6 rounded-lg mb-8 flex flex-col items-center'>
               <img className='w-48' src={profile.picture.original.url} />
               <p className='text-xl text-center mt-6'>{profile.name}</p>
               <p className='text-base text-gray-400  text-center mt-2'>{profile.bio}</p>
