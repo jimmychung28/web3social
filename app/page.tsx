@@ -39,7 +39,7 @@ export default function Home() {
               <Link href={`/profile/${profile.handle}`}>
                 <p className='cursor-pointer text-violet-600 text-lg font-medium text-center mt-2 mb-2'>{profile.handle}</p>
               </Link>
-              <p className='text-pink-600 text-sm font-medium text-center'>{profile.stats.totalFollowers} followers</p>
+              <p className='text-pink-600 text-sm font-medium text-center'>{profile.stats.totalFollowers} followers </p>
             </div>
           ))
         }
