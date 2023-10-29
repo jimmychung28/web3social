@@ -42,8 +42,8 @@ export default function Profile() {
   if (!profile) return null
 
   return (
-    <div className='pt-20'>
-      <div className='flex flex-col justify-center items-center'>
+    <div className='pt-20 bg-[#1da1f2]'>
+      <div className='flex flex-col justify-center items-center '>
         <img
           className='w-64 rounded-full'
           src={profile.picture?.uri || profile.picture?.original?.url}
@@ -52,7 +52,7 @@ export default function Profile() {
         <p className='text-center text-xl font-bold mt-2 mb-2 w-1/2'>{profile.bio}</p>
         {
             publications.map(pub => (
-              <div key={pub.id} className='shadow p-10 rounded mb-8 w-2/3'>
+              <div key={pub.id} className='shadow p-10 rounded mb-8 w-2/3 bg-[#FFFFFF]'>
                 <p>{pub.metadata.content}</p>
               </div>
             ))

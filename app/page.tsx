@@ -27,8 +27,8 @@ export default function Home() {
     }
   }
   return (
-    <div className='pt-20 bg-[#1da1f2]'>
-      <div className='flex flex-col justify-center items-center'>
+    <div className='pt-20 bg-[#1da1f2] h-screen'>
+      <div className='flex flex-col justify-center items-center bg-[#1da1f2]'>
         <h1 className='text-5xl mb-6 font-bold'>Alpacpac</h1>
         {
           profiles.map(profile => (
