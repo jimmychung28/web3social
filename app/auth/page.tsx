@@ -20,7 +20,7 @@ export default function Home() {
   }
   async function connect() {
     /* this allows the user to connect their wallet */
-    const account = await window.ethereum.send('eth_requestAccounts')
+    const account = await (window as any).ethereum.send('eth_requestAccounts')
     if (account.result.length) {
       setAddress(account.result[0])
     }
@@ -32,7 +32,7 @@ export default function Home() {
         query: challenge,
         variables: { address }
       })
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const provider = new ethers.providers.Web3Provider((window as any).ethereum);
       const signer = provider.getSigner()
       /* ask the user to sign a message with the challenge info returned from the server */
       const signature = await signer.signMessage(challengeInfo.data.challenge.text)
