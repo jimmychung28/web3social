@@ -7,6 +7,8 @@ import { client, exploreProfiles } from '../api'
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import AppAppBar from './views/AppAppBar';
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+import theme from './theme/theme';
 
 export default function Home() {
   /* create initial state to hold array of profiles */
@@ -31,7 +33,9 @@ export default function Home() {
   }
   return (
     <div>
+        <ThemeProvider theme={theme}>
       <AppAppBar />
+      </ThemeProvider>
     </div>
   )
 }
