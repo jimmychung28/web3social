@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div>
         <ThemeProvider theme={theme}>
-      <AppAppBar />
+          <AppAppBar />
       </ThemeProvider>
     </div>
   )
