@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 const rightLink = {
   fontSize: 16,
@@ -26,23 +28,10 @@ function AppAppBar() {
             {'Alpacpac 🦙'}
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
-            <Link
-              color="inherit"
-              variant="h6"
-              underline="none"
-              href="/premium-themes/onepirate/sign-in/"
-              sx={rightLink}
-            >
-              {'Sign In'}
-            </Link>
-            <Link
-              variant="h6"
-              underline="none"
-              href="/premium-themes/onepirate/sign-up/"
-              sx={{ ...rightLink, color: 'secondary.main' }}
-            >
-              {'Sign Up'}
-            </Link>
+          <ButtonGroup variant="contained" aria-label="button group">
+             <Button variant="contained" sx={{backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign In'}</Button>
+            <Button variant="contained" sx={{backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign Up'}</Button>
+          </ButtonGroup>
           </Box>
         </Toolbar>
       </AppBar>
