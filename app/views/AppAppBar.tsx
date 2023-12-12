@@ -23,14 +23,14 @@ function AppAppBar() {
             underline="none"
             color="inherit"
             href="/premium-themes/onepirate/"
-            sx={{ fontSize: 24 }}
+            sx={{ fontSize: 24, fontWeight: 'bold', letterSpacing: 4 }}
           >
-            {'Alpacpac 🦙'}
+            {'ALPACPAC 🦙'}
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
           <ButtonGroup variant="contained" aria-label="button group">
-             <Button variant="contained" sx={{backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign In'}</Button>
-            <Button variant="contained" sx={{backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign Up'}</Button>
+             <Button variant="contained" sx={{color: '#000000',backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign In'}</Button>
+            <Button variant="contained" sx={{color: '#000000',backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign Up'}</Button>
           </ButtonGroup>
           </Box>
         </Toolbar>
