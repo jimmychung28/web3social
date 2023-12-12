@@ -28,9 +28,9 @@ function AppAppBar() {
             {'ALPACPAC 🦙'}
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
-          <ButtonGroup variant="contained" aria-label="button group">
-             <Button variant="contained" sx={{color: '#000000',backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign In'}</Button>
-            <Button variant="contained" sx={{color: '#000000',backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign Up'}</Button>
+          <ButtonGroup variant="contained"  aria-label="button group">
+             <Button variant="contained"  sx={{color: '#000000',backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign In'}</Button>
+            <Button variant="contained"  sx={{color: '#000000',backgroundColor: (theme) => theme.palette.secondary.main }}>{'Sign Up'}</Button>
           </ButtonGroup>
           </Box>
         </Toolbar>
